@@ -321,7 +321,7 @@ type OVNKubernetesConfig struct {
 
 type HybridOverlayConfig struct {
 	// HybridClusterNetwork defines a network space given to nodes on an additional overlay network.
-	HybridClusterNetwork []ClusterNetworkEntry `json:"hybridClusterNetwork"`
+	HybridClusterNetwork []ClusterNetworkEntry `json:"hybridClusterNetwork,omitempty"`
 	// HybridOverlayVXLANPort defines the VXLAN port number to be used by the additional overlay network.
 	// Default is 4789
 	// +optional
